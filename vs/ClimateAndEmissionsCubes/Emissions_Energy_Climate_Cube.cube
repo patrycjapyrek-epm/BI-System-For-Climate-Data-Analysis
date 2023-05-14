@@ -1,0 +1,601 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="32175a53-5575-4f3c-8192-835baebb297c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Emissions_Energy_Climate_Cube</ID>
+  <Name>Emissions_Energy_Climate_Cube</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="224926cf-048f-46fd-bff9-4c955c509427">
+      <ID>Dim Location</ID>
+      <Name>Dim Location</Name>
+      <DimensionID>Dim Location</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="193c155f-d5d7-4fd1-9bfc-187e2bb55123">
+          <AttributeID>Country Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4fcf3e14-2564-42a9-a0b1-7c05ef03f3a4">
+          <AttributeID>Country Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="56610cf9-5ff9-480f-8d7f-a2a719e226b9">
+          <AttributeID>Country Full Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5e21acb6-2308-4901-b237-d9190047b31d">
+          <AttributeID>Capital</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6800fcdb-bb28-4e2d-9566-994a97eff512">
+          <AttributeID>Continent</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="3505cbb1-3df9-46c0-a228-d5bfa9a6752d">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="848b051f-933b-43bf-af8e-4761ae28625c">
+      <ID>Dim Date</ID>
+      <Name>Dim Date</Name>
+      <DimensionID>Dim Date</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="0bd54ad1-3e0b-4c7b-a76b-b1e3fc32b6be">
+          <AttributeID>Date Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="70a624e7-e30b-4594-9eb1-a1b910d13178">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="21ec0bb0-842d-40c5-b05e-3b2e379c0645">
+          <AttributeID>Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c58ba2a7-c630-41cb-ae31-c7f3dcb1a208">
+          <AttributeID>Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="51a09184-337f-458f-9783-80814595c5ba">
+          <AttributeID>Weekday Name</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="47639930-5ef7-43f1-bdbb-6efbd89bae42">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="732ebdb4-f889-4401-b90c-00350341c0d9">
+          <HierarchyID>Hierarchy 1</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="48d5ddea-cf2d-428f-84d8-90696c6351d0">
+      <ID>Dim Source</ID>
+      <Name>Dim Source</Name>
+      <DimensionID>Dim Source</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="5d8bfa5a-0948-4359-b281-cdfd6b84b551">
+          <AttributeID>Source Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="504fd207-09e5-46c7-84fe-29a5b10c4644">
+          <AttributeID>Source Desc</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="db118a26-daaa-49b3-bb4f-f35a703e250d">
+      <ID>Dim Sector</ID>
+      <Name>Dim Sector</Name>
+      <DimensionID>Dim Sector</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="103f83fe-b739-4332-94b4-84f7e940b0c2">
+          <AttributeID>Sector Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="66e6a2a7-27a9-4fc8-8c72-19a4e6d3e6ac">
+          <AttributeID>Sector Desc</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="bf8f8397-a9fa-4927-953f-d7cca5630236">
+      <ID>Dim Pollutant</ID>
+      <Name>Dim Pollutant</Name>
+      <Translations>
+        <Translation dwd:design-time-name="46bc594b-0961-445b-a985-56439fffc5bc">
+          <Language>1045</Language>
+          <Caption>Dim Zanieczyszczacz</Caption>
+        </Translation>
+      </Translations>
+      <DimensionID>Dim Pollutant</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="098a2fd8-937d-4753-8dba-ba2980d69da0">
+          <AttributeID>Pollutant Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="aabc1850-c521-48f8-817a-33b1214e04ee">
+          <AttributeID>Pollutant Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ca19ef2f-104b-4c75-b90e-72108f2a0171">
+          <AttributeID>Pollutant Desc</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="2650ab3c-8f7a-41d2-a807-7fb6a23d2316">
+      <ID>Fact Country Info</ID>
+      <Name>Fact Country Info</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="570f2b8d-3ae3-4938-a8ec-d36933bfaae0">
+          <ID>GDP</ID>
+          <Name>GDP</Name>
+          <Source dwd:design-time-name="2c4eeed6-905a-4676-be2f-4acd17ae68c1">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d3ff51c9-2ee0-46a1-8502-82a9c362ee57">
+              <TableID>dbo_Fact_CountryInfo</TableID>
+              <ColumnID>GDP</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="55979554-58b1-4ed7-99b1-359c94e16030">
+          <ID>Population</ID>
+          <Name>Population</Name>
+          <Source dwd:design-time-name="5eea6d8d-4778-45cb-b2e3-97ac56cb8d11">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="85b53656-bc22-4118-a0f8-93b2bfbc9d41">
+              <TableID>dbo_Fact_CountryInfo</TableID>
+              <ColumnID>Population</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c68192d4-4312-40fa-a1a1-303f03b88e27">
+          <ID>Labour Force</ID>
+          <Name>Labour Force</Name>
+          <Source dwd:design-time-name="8647d16d-8b32-4b29-a886-d322f26ee363">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="bb8de272-d372-459b-ba2e-49db4e88f6de">
+              <TableID>dbo_Fact_CountryInfo</TableID>
+              <ColumnID>LabourForce</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="450ee03c-72f7-4637-b265-16c8b198a803">
+          <ID>Unemployement Rate</ID>
+          <Name>Unemployement Rate</Name>
+          <Source dwd:design-time-name="38ecd6b8-eefa-45e8-977f-c2327f6cf4f5">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="cdab6300-dc81-4475-ab3e-becf1016de04">
+              <TableID>dbo_Fact_CountryInfo</TableID>
+              <ColumnID>UnemployementRate</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="2f6bc514-1da8-45f2-a541-c57d6717660c">
+          <ID>Unemployed People</ID>
+          <Name>Unemployed People</Name>
+          <Source dwd:design-time-name="ab7843f7-71f8-44f0-a82a-b3581609901e">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="94b1eceb-62e8-4015-991d-f0a8c6122890">
+              <TableID>dbo_Fact_CountryInfo</TableID>
+              <ColumnID>UnemployedPeople</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="a758eac1-8f44-4311-8b0f-221b895e2267">
+          <ID>GNI</ID>
+          <Name>GNI</Name>
+          <Source dwd:design-time-name="33ad7f56-f8ad-47d2-87bc-bd6cf3e59664">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="03fe10a3-9515-40b1-9718-a4af2131a0e8">
+              <TableID>dbo_Fact_CountryInfo</TableID>
+              <ColumnID>GNI</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="7f9fb568-58ff-4041-adf8-ea3c842ccc37">
+          <ID>Inflation</ID>
+          <Name>Inflation</Name>
+          <Source dwd:design-time-name="238f278d-7ba4-4781-8ea8-3325a88801c1">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="7970d75d-5b7a-422f-8f66-dc64c3fcc9e9">
+              <TableID>dbo_Fact_CountryInfo</TableID>
+              <ColumnID>Inflation</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="1eae6dba-cab8-4d43-bbb1-a0c7e4c272be">
+          <ID>Forest Area</ID>
+          <Name>Forest Area</Name>
+          <Source dwd:design-time-name="61f97b01-7625-44b7-acfd-6a8c361c86c3">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="368f8615-3444-41d0-85b2-e3c013e0b47d">
+              <TableID>dbo_Fact_CountryInfo</TableID>
+              <ColumnID>ForestArea</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="fdcb564b-98bd-4725-b9a9-ddb250752913">
+          <ID>Life Satisfaction</ID>
+          <Name>Life Satisfaction</Name>
+          <Source dwd:design-time-name="da53a12a-2ed0-4a9c-a05c-2aead260adc2">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="3fe5a1b9-a531-4ae2-9c3f-05f453ca64ba">
+              <TableID>dbo_Fact_CountryInfo</TableID>
+              <ColumnID>LifeSatisfaction</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="2bd42acb-1d28-49e7-ac6d-06d6483dd0ef">
+          <ID>Life Expectancy</ID>
+          <Name>Life Expectancy</Name>
+          <Source dwd:design-time-name="128d1e8c-d33e-4170-b2b8-41fa20cf5307">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ec55af09-c446-415f-a80c-3144b8a5ed61">
+              <TableID>dbo_Fact_CountryInfo</TableID>
+              <ColumnID>LifeExpectancy</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="d963824f-16fd-46a6-9ce7-e98b04974d0c">
+          <ID>Human Development Index</ID>
+          <Name>Human Development Index</Name>
+          <Source dwd:design-time-name="a3cfdd3f-f704-4fec-b6e3-531507d47234">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="66294ed1-a66a-4ebe-8c1b-9d34c3308ee4">
+              <TableID>dbo_Fact_CountryInfo</TableID>
+              <ColumnID>HumanDevelopmentIndex</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="ef73770d-9ad9-4040-bf2c-2aa5a7cac304">
+          <ID>Land Area</ID>
+          <Name>Land Area</Name>
+          <Source dwd:design-time-name="b4221179-d6df-40d1-a97b-87988f475174">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="cc5f928b-b220-4930-ad5b-52018e1c39dd">
+              <TableID>dbo_Fact_CountryInfo</TableID>
+              <ColumnID>LandArea</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="56cf7f72-1203-412b-88f4-ef076d4b3515">
+          <ID>Agriculture Area</ID>
+          <Name>Agriculture Area</Name>
+          <Source dwd:design-time-name="1bec1f62-a237-417d-be7d-2532e88473be">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="cee08e89-adfa-4988-ad59-0f591a4785f6">
+              <TableID>dbo_Fact_CountryInfo</TableID>
+              <ColumnID>AgricultureArea</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="454096b0-1022-4894-b844-4a1495019873">
+          <ID>Deaths</ID>
+          <Name>Deaths</Name>
+          <Source dwd:design-time-name="474bb83b-72c3-4769-be48-64a13771ec7e">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="89113c9f-8715-4e1e-a708-ecb0bfab39cf">
+              <TableID>dbo_Fact_CountryInfo</TableID>
+              <ColumnID>Deaths</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="3f30c322-6440-4346-81bc-eb18af1c82c6">
+          <ID>Fact Country Info Count</ID>
+          <Name>Fact Country Info Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="b884e0cd-838b-4b05-86d4-7202e311c529">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="84c0e4ce-4181-4e46-98eb-f79596e63285">
+              <TableID>dbo_Fact_CountryInfo</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e5daae29-3ee4-4466-800f-b3e5c4a6c2fa">
+          <CubeDimensionID>Dim Location</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="39068c20-89e3-43b0-bf98-837d1175862c">
+              <AttributeID>Country Code</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6bd8a045-3a33-42d9-ba3c-fe4a223b661f">
+                  <DataType>WChar</DataType>
+                  <DataSize>2</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1a7c55dd-3f7c-4d09-b60e-9b90d4956ca6">
+                    <TableID>dbo_Fact_CountryInfo</TableID>
+                    <ColumnID>CountryCode</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a9df1cca-6a72-459b-9a75-122b37ebef99">
+          <CubeDimensionID>Dim Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="861407fd-98a7-442a-aa10-95947fb3f755">
+              <AttributeID>Date Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3e120dab-833c-4704-9f2c-806dcc480d35">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e0f8e995-9e64-42c3-843b-3e9a1503126c">
+                    <TableID>dbo_Fact_CountryInfo</TableID>
+                    <ColumnID>DateKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="7df766dc-75dc-4059-a0bf-3566490805ec">
+      <ID>Fact Energy Info</ID>
+      <Name>Fact Energy Info</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="7611ef34-dea4-4ea7-89e3-92733a9879a0">
+          <ID>Electricity Produced</ID>
+          <Name>Electricity Produced</Name>
+          <Source dwd:design-time-name="1de23442-1db7-4a11-ad91-dfe5ee976b6a">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="a141df4b-d1e2-4808-97fb-4ff0a2b76e66">
+              <TableID>dbo_Fact_EnergyInfo</TableID>
+              <ColumnID>ElectricityProduced</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="a569c51e-cd83-46b8-aa14-01ff583b628b">
+          <ID>Electricity Consumed</ID>
+          <Name>Electricity Consumed</Name>
+          <Source dwd:design-time-name="30044c51-a906-4ed8-906b-4b1be3d479ef">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="cfff74cd-3a4c-4235-ad0e-6136d2852525">
+              <TableID>dbo_Fact_EnergyInfo</TableID>
+              <ColumnID>ElectricityConsumed</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="0952dcd3-7612-4ee5-ac92-75166aeccf13">
+          <ID>Energy Consumed</ID>
+          <Name>Energy Consumed</Name>
+          <Source dwd:design-time-name="0b902902-b346-4452-9534-fcb5e972388f">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="2dede8a9-bad7-4a8c-910d-aee20cb66284">
+              <TableID>dbo_Fact_EnergyInfo</TableID>
+              <ColumnID>EnergyConsumed</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="725e077a-2fa4-4999-ab9a-3d80768eb1ac">
+          <ID>Fact Energy Info Count</ID>
+          <Name>Fact Energy Info Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="8e7a9292-4832-4ea3-b8d6-e36bf4487739">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="711aa4b1-8e0c-4279-a114-666516a62cf4">
+              <TableID>dbo_Fact_EnergyInfo</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6f0ee5f0-d23f-47a8-8628-a9fbc34fa85f">
+          <CubeDimensionID>Dim Location</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="454e82fe-e998-42b2-bbba-e35248a24975">
+              <AttributeID>Country Code</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1b5a39bf-9195-4177-af50-d7ed52f2ea31">
+                  <DataType>WChar</DataType>
+                  <DataSize>2</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="26b8769a-c741-4db3-b217-f6080682b2ef">
+                    <TableID>dbo_Fact_EnergyInfo</TableID>
+                    <ColumnID>CountryCode</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="24384b2b-e232-4139-a3f3-f6ccb1ceb6af">
+          <CubeDimensionID>Dim Source</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a457bbfd-6a67-41f0-b46b-1e171dee9192">
+              <AttributeID>Source Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1b01980e-543d-4458-b740-a354cb749919">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7ff6e858-e56a-43f1-9c6a-6c8eb8b1ae4f">
+                    <TableID>dbo_Fact_EnergyInfo</TableID>
+                    <ColumnID>SourceId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="01f6b805-0000-4bff-8efb-22cf7bbdc759">
+          <CubeDimensionID>Dim Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ee0a4388-0ba7-46ce-bcfd-d231beb3c9eb">
+              <AttributeID>Date Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f47410fa-6551-49a3-9f4b-87861f50c1d1">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="eec41337-6b21-40a0-bce9-961fab2e3371">
+                    <TableID>dbo_Fact_EnergyInfo</TableID>
+                    <ColumnID>DateKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="749be057-3293-4188-8021-757fee8b6ba9">
+      <ID>Fact Emissions</ID>
+      <Name>Fact Emissions</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="87304551-b2d8-4a42-9970-f0f265105192">
+          <ID>Emitted Amount</ID>
+          <Name>Emitted Amount</Name>
+          <Source dwd:design-time-name="3ce90368-3a5c-490e-8148-41e3b6bfc940">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="1f9c9646-aed2-4fad-8659-17c4df14dda1">
+              <TableID>dbo_Fact_Emissions</TableID>
+              <ColumnID>EmittedAmount</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="101b828a-4857-4a6e-b277-02692d68fec8">
+          <ID>Fact Emissions Count</ID>
+          <Name>Fact Emissions Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="14c8a141-f994-4b7d-8a79-c0e3786c6bd8">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="7a85331c-d228-4560-9c10-c0cef5b06103">
+              <TableID>dbo_Fact_Emissions</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="bd70d08b-77f5-473b-80ee-709cc5d12c9d">
+          <CubeDimensionID>Dim Sector</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b61e9d04-0618-4c21-a535-8ef57e7ac2ca">
+              <AttributeID>Sector Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="494de785-004f-4f49-9e76-d4e0d7d09697">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e9ae4fce-1159-4a58-ae09-e213fed9689c">
+                    <TableID>dbo_Fact_Emissions</TableID>
+                    <ColumnID>SectorId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e356915c-c9d6-4377-ba32-7f85803100fa">
+          <CubeDimensionID>Dim Location</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8d60a9ad-a953-49a2-b527-dcdc1e2ccdb4">
+              <AttributeID>Country Code</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a43a8235-7b7e-4710-bdec-933e0a509f9e">
+                  <DataType>WChar</DataType>
+                  <DataSize>2</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d03604a3-5d81-4d8a-af14-2803a85c4785">
+                    <TableID>dbo_Fact_Emissions</TableID>
+                    <ColumnID>CountryCode</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="8ff4b291-f001-431f-810e-b3b180154a9e">
+          <CubeDimensionID>Dim Pollutant</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9bd19a02-0f1c-4529-9ff4-ed2ffd6de0f4">
+              <AttributeID>Pollutant Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="80f4bbb4-76a7-4095-947e-62e6a5440997">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ff9eb479-372f-413d-9836-1fa401d81754">
+                    <TableID>dbo_Fact_Emissions</TableID>
+                    <ColumnID>PollutantId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="115279ef-a398-470f-a2ff-86908baae26b">
+          <CubeDimensionID>Dim Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e01ea40f-812c-48c7-9093-e036c106e66e">
+              <AttributeID>Date Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="33770f55-4e9f-4390-a593-5f055f985cd8">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="52210f49-ce8b-4522-860a-d09c70ec8336">
+                    <TableID>dbo_Fact_Emissions</TableID>
+                    <ColumnID>DateKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="e152f9bd-ebd0-404f-8bfc-eb6a835c3012">
+    <DataSourceViewID>Emissions And Climate DW</DataSourceViewID>
+  </Source>
+</Cube>

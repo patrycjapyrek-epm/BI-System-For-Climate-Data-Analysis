@@ -1,0 +1,510 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="735ecc87-10fb-4242-8de5-904d52643fe1" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>CountryInfo_Cube</ID>
+  <Name>CountryInfo_Cube</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="13" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-12856" scrolltop="-2266" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="29369" y="13785" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_Location" left="271" top="7400" logicalid="6" controlid="1" masterid="0" hint1="0" hint2="0" width="3334" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000060d000043110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Dim_Location" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_Date" left="6256" top="0" logicalid="7" controlid="2" masterid="0" hint1="0" hint2="0" width="3836" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000fc0e000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Dim_Date" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Fact_CountryInfo" left="20" top="0" logicalid="8" controlid="3" masterid="0" hint1="0" hint2="0" width="3836" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000fc0e000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Fact_CountryInfo" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="3556" top="2101" logicalid="9" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_FactCountryInfo_Dim_Date]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="3" sourceattachpoint="22" destattachpoint="23" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="6256" y="2500" />
+              <point x="3856" y="2500" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="439" top="4700" logicalid="12" controlid="7" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Fact_CountryInfo_Dim_Location]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="3" sourceattachpoint="0" destattachpoint="3" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="838" y="7400" />
+              <point x="838" y="5000" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-12856</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-2266</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="947eb0e6-5dc2-4630-bae6-6f4fc091d318">
+      <ID>Dim Location</ID>
+      <Name>Dim Location</Name>
+      <DimensionID>Dim Location</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="f5c68f87-6503-4037-93f5-62f8d9745a19">
+          <AttributeID>Country Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6741f2cd-6a35-4559-a356-70bac5fb1241">
+          <AttributeID>Country Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e4af63f6-b4db-4d3e-bf5a-3b7e2d204122">
+          <AttributeID>Country Full Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ac54cecf-1a4f-42dd-a583-f5c8c668a0ba">
+          <AttributeID>Capital</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f0aacee5-2b52-4fcc-b609-ce85c911f572">
+          <AttributeID>Continent</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="582095b1-4318-4057-a369-bb3490f7e6ab">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="866eac94-01fa-49cc-91bd-17f8266e260d">
+      <ID>Dim Date</ID>
+      <Name>Dim Date</Name>
+      <DimensionID>Dim Date</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="dc53089d-2161-42dc-983e-caed2b795902">
+          <AttributeID>Date Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="244aaf8b-bd94-40be-90f0-62755cd035fb">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1a2e6a1b-024c-4fee-a05e-a2b2cc53c5e6">
+          <AttributeID>Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f960949e-a9ec-44c2-863c-4ccc2077f017">
+          <AttributeID>Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1705bd49-5e3b-4123-bcb2-e544453e4da1">
+          <AttributeID>Weekday Name</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="335b0e37-0043-41b1-9a11-64163d30f855">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="ca46a18c-bef8-4bb4-af67-3d015f7abe74">
+          <HierarchyID>Hierarchy 1</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="4c14f541-2b22-4619-9822-fbc611fec31d">
+      <ID>Fact Country Info</ID>
+      <Name>Fact Country Info</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="fe684ee6-139d-4b65-9752-a2f7416c83ba">
+          <ID>GDP</ID>
+          <Name>GDP</Name>
+          <Source dwd:design-time-name="ba65760d-471b-4740-ad52-53ea9bcb68fe">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="22aa1845-a287-42fc-bd47-8ccc84590b84">
+              <TableID>dbo_Fact_CountryInfo</TableID>
+              <ColumnID>GDP</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="2af47637-80d6-4e19-aab6-6ee3f57033ec">
+          <ID>Population</ID>
+          <Name>Population</Name>
+          <Source dwd:design-time-name="ac58e398-b7d5-4646-8882-2530890b7056">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="946b6f96-ba5b-4d1e-9d31-020a739d4613">
+              <TableID>dbo_Fact_CountryInfo</TableID>
+              <ColumnID>Population</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="8aa41603-d5b3-403a-83b0-b3384db1b1bd">
+          <ID>Labour Force</ID>
+          <Name>Labour Force</Name>
+          <Source dwd:design-time-name="033a8a31-b89f-4a4e-b212-d1b251a6dfa9">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="52ae8620-bbed-4267-a969-3fa63c0be185">
+              <TableID>dbo_Fact_CountryInfo</TableID>
+              <ColumnID>LabourForce</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="bf91fc47-fb66-47d4-8792-4ead8b6854e4">
+          <ID>Unemployement Rate</ID>
+          <Name>Unemployement Rate</Name>
+          <Source dwd:design-time-name="00961fed-97f5-427c-afeb-355275e85aa7">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="01436e83-6a12-4d79-a1c7-fef0c7cf372a">
+              <TableID>dbo_Fact_CountryInfo</TableID>
+              <ColumnID>UnemployementRate</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="21f848d5-0e33-48a3-b16e-fba935567bfb">
+          <ID>Unemployed People</ID>
+          <Name>Unemployed People</Name>
+          <Source dwd:design-time-name="33086e70-2d63-44ee-9b7b-e4e532f8804e">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="235e58ae-f7f3-4f3c-beef-bfd622698b7c">
+              <TableID>dbo_Fact_CountryInfo</TableID>
+              <ColumnID>UnemployedPeople</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="3abfa035-a2fb-4aad-9cc3-9bae1d96fdbf">
+          <ID>GNI</ID>
+          <Name>GNI</Name>
+          <Source dwd:design-time-name="00cf43a3-649a-4b86-a4a6-11df229d0816">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="897d97df-f27a-417f-a274-584fb67f61a5">
+              <TableID>dbo_Fact_CountryInfo</TableID>
+              <ColumnID>GNI</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="3ef9f050-c393-4938-bd22-9f7e27b007c1">
+          <ID>Inflation</ID>
+          <Name>Inflation</Name>
+          <Source dwd:design-time-name="fcddf187-0387-4502-8c84-ef44eb600951">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="915cfa2a-5239-4d72-89fa-188913024d7e">
+              <TableID>dbo_Fact_CountryInfo</TableID>
+              <ColumnID>Inflation</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="84529e72-b032-470c-be89-6fb07ded9210">
+          <ID>Forest Area</ID>
+          <Name>Forest Area</Name>
+          <Source dwd:design-time-name="9e7ccf44-76fe-466d-bdd4-2b9fc55feae3">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b1db8336-7807-4c6d-8e78-31d1b76570de">
+              <TableID>dbo_Fact_CountryInfo</TableID>
+              <ColumnID>ForestArea</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="efbf8264-2ca6-4a53-b8d1-fa93e9c0e6c4">
+          <ID>Life Satisfaction</ID>
+          <Name>Life Satisfaction</Name>
+          <Source dwd:design-time-name="823cf60c-e6ff-4ef9-9e3f-6f5a8507af9c">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="3e078905-4916-4d70-b9ea-1d8cc379ae83">
+              <TableID>dbo_Fact_CountryInfo</TableID>
+              <ColumnID>LifeSatisfaction</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c9977417-ba35-4d86-a0fd-d35e18a9416e">
+          <ID>Life Expectancy</ID>
+          <Name>Life Expectancy</Name>
+          <Source dwd:design-time-name="e06882bd-1307-4159-9ebf-dc90b842c410">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="a3faab7a-5821-4a01-aa0b-37f4dac4cb6d">
+              <TableID>dbo_Fact_CountryInfo</TableID>
+              <ColumnID>LifeExpectancy</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e9e7dfb0-d863-44bc-85aa-55d1d6cf4f9c">
+          <ID>Fact Country Info Count</ID>
+          <Name>Fact Country Info Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="28b2b584-91bc-45b1-8836-5d2902b09173">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="c40cc0bb-8016-4df6-8592-d06a05f2655a">
+              <TableID>dbo_Fact_CountryInfo</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d880ab86-0490-4c29-a0be-f497ed049fab">
+          <CubeDimensionID>Dim Location</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="879c39b5-c483-4c05-9367-65b41864a2aa">
+              <AttributeID>Country Code</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="22730741-83a1-40dc-8a93-345bd53e310e">
+                  <DataType>WChar</DataType>
+                  <DataSize>2</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f5512f00-5d9b-4e5b-bb38-76d78c3ae6fc">
+                    <TableID>dbo_Fact_CountryInfo</TableID>
+                    <ColumnID>CountryCode</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a24ffb2c-2099-41cb-a382-a8d4bf3b1faf">
+          <CubeDimensionID>Dim Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a9ff581c-da71-4c04-b15f-2cecd9bd06cd">
+              <AttributeID>Date Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="33216415-b3db-4a7a-9c5a-33b88fad7411">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="eb2bd1f9-854f-47ae-a1e4-a946869e0d14">
+                    <TableID>dbo_Fact_CountryInfo</TableID>
+                    <ColumnID>DateKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="4dd50e68-4f99-420a-9467-3f0b1258e601">
+    <DataSourceViewID>Emissions And Climate DW</DataSourceViewID>
+  </Source>
+  <MdxScripts>
+    <MdxScript dwd:design-time-name="6f01a560-ff37-42e8-9a23-4e23abedd597">
+      <ID>MdxScript</ID>
+      <Name>MdxScript</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Commands>
+        <Command>
+          <Text>/*
+The CALCULATE command controls the aggregation of leaf cells in the cube.
+If the CALCULATE command is deleted or modified, the data within the cube is affected.
+You should edit this command only if you manually specify how the cube is aggregated.
+*/
+CALCULATE;  
+CREATE MEMBER CURRENTCUBE.[Measures].[DO DODANIA JAK BEDA DNI! (YTD)]
+ AS Aggregate
+(
+PeriodsToDate
+([Dim Date].[Year], [Dim Date].CurrenMember
+),
+[Measures].[GDP]
+), 
+VISIBLE = 1; 
+CREATE MEMBER CURRENTCUBE.[Measures].[Life Satisfaction 1 Year Before]
+ AS ([Measures].[Life Satisfaction], parallelperiod([Dim Date].[Year Hierarchy].[Year],1,
+[Dim Date].[Year Hierarchy].currentmember)), 
+VISIBLE = 0  ; </Text>
+        </Command>
+      </Commands>
+    </MdxScript>
+  </MdxScripts>
+  <Kpis>
+    <Kpi dwd:design-time-name="6bd99dbe-beff-4696-80f4-9441ee139938">
+      <ID>KPI</ID>
+      <Name>Life Satisfaction KPI</Name>
+      <Value>[Measures].[Life Satisfaction]</Value>
+      <Goal>10</Goal>
+      <Status>case	when isempty([Measures].[Life Satisfaction]) then null
+		when [Measures].[Life Satisfaction] &gt;6 then 1
+		when [Measures].[Life Satisfaction] &lt;= 6 AND [Measures].[Life Satisfaction] &gt; 3  then 0
+		when [Measures].[Life Satisfaction] &lt;= 3 then -1
+end</Status>
+      <Trend>case 
+		when isempty ([Measures].[Life Satisfaction]) then null
+		when isempty([Measures].[Life Satisfaction 1 Year Before]) then null
+		when [Measures].[Life Satisfaction]&gt;[Measures].[Life Satisfaction 1 Year Before] then 1
+		when [Measures].[Life Satisfaction]&lt;[Measures].[Life Satisfaction 1 Year Before] then -1
+		else 0
+end
+
+
+</Trend>
+      <TrendGraphic>Standard Arrow</TrendGraphic>
+      <StatusGraphic>Gauge - Ascending</StatusGraphic>
+    </Kpi>
+  </Kpis>
+  <Actions>
+    <Action xsi:type="DrillThroughAction" dwd:design-time-name="775ab472-4896-42d4-9fb1-4f4ff81b0a86">
+      <ID>Drillthrough Action</ID>
+      <Name>Country Details</Name>
+      <Caption>Details</Caption>
+      <TargetType>Cells</TargetType>
+      <Target>MeasureGroupMeasures("Fact Country Info")</Target>
+      <Type>DrillThrough</Type>
+      <Columns>
+        <Column xsi:type="CubeAttributeBinding" dwd:design-time-name="ef609a12-f493-4ca7-a46c-f8b1f3cdb82a">
+          <CubeID>CountryInfo_Cube</CubeID>
+          <CubeDimensionID>Dim Location</CubeDimensionID>
+          <AttributeID>Country Code</AttributeID>
+          <Type>All</Type>
+        </Column>
+        <Column xsi:type="CubeAttributeBinding" dwd:design-time-name="fc6326e6-3afc-4885-af6c-5747aff46cd6">
+          <CubeID>CountryInfo_Cube</CubeID>
+          <CubeDimensionID>Dim Location</CubeDimensionID>
+          <AttributeID>Country Name</AttributeID>
+          <Type>All</Type>
+        </Column>
+        <Column xsi:type="CubeAttributeBinding" dwd:design-time-name="bc6f84ad-aa70-4fa1-b986-78cda6b32ba0">
+          <CubeID>CountryInfo_Cube</CubeID>
+          <CubeDimensionID>Dim Location</CubeDimensionID>
+          <AttributeID>Country Full Name</AttributeID>
+          <Type>All</Type>
+        </Column>
+        <Column xsi:type="CubeAttributeBinding" dwd:design-time-name="e60f732e-a697-47cf-a6e4-ff11bfe07792">
+          <CubeID>CountryInfo_Cube</CubeID>
+          <CubeDimensionID>Dim Location</CubeDimensionID>
+          <AttributeID>Capital</AttributeID>
+          <Type>All</Type>
+        </Column>
+        <Column xsi:type="CubeAttributeBinding" dwd:design-time-name="d90afa26-f4a8-4707-9aed-016e06afa72c">
+          <CubeID>CountryInfo_Cube</CubeID>
+          <CubeDimensionID>Dim Location</CubeDimensionID>
+          <AttributeID>Continent</AttributeID>
+          <Type>All</Type>
+        </Column>
+        <Column xsi:type="CubeAttributeBinding" dwd:design-time-name="732d3530-0443-450c-8d86-ee868e9e2f59">
+          <CubeID>CountryInfo_Cube</CubeID>
+          <CubeDimensionID>Dim Location</CubeDimensionID>
+          <AttributeID>Land Area</AttributeID>
+          <Type>All</Type>
+        </Column>
+        <Column xsi:type="MeasureBinding" dwd:design-time-name="23316efa-a9e0-4bfe-ab73-e0e7a53ca8fc">
+          <MeasureID>GDP</MeasureID>
+        </Column>
+        <Column xsi:type="MeasureBinding" dwd:design-time-name="0a26e83d-84b2-46a1-a70c-344581411f2f">
+          <MeasureID>Population</MeasureID>
+        </Column>
+        <Column xsi:type="MeasureBinding" dwd:design-time-name="c3e7d591-4d14-4ab4-9cde-161f2d807c4e">
+          <MeasureID>Labour Force</MeasureID>
+        </Column>
+        <Column xsi:type="MeasureBinding" dwd:design-time-name="336eb096-b513-4fb8-ae57-4a7432300388">
+          <MeasureID>Unemployement Rate</MeasureID>
+        </Column>
+        <Column xsi:type="MeasureBinding" dwd:design-time-name="23806599-ff3e-4a3a-a977-0443fc92f6cf">
+          <MeasureID>Unemployed People</MeasureID>
+        </Column>
+        <Column xsi:type="MeasureBinding" dwd:design-time-name="4212b730-e201-4e19-99f1-eb89da888b28">
+          <MeasureID>GNI</MeasureID>
+        </Column>
+        <Column xsi:type="MeasureBinding" dwd:design-time-name="0c476bac-4e06-4832-ac48-4587410efdcd">
+          <MeasureID>Inflation</MeasureID>
+        </Column>
+        <Column xsi:type="MeasureBinding" dwd:design-time-name="4731ee8a-7340-4805-8dd1-beadaffb01a1">
+          <MeasureID>Forest Area</MeasureID>
+        </Column>
+        <Column xsi:type="MeasureBinding" dwd:design-time-name="c7abf8d5-319d-4265-afb6-05ee5e008b62">
+          <MeasureID>Life Satisfaction</MeasureID>
+        </Column>
+        <Column xsi:type="MeasureBinding" dwd:design-time-name="619ccab1-459d-436a-b875-9eb4ae02501f">
+          <MeasureID>Life Expectancy</MeasureID>
+        </Column>
+      </Columns>
+      <MaximumRows>5000</MaximumRows>
+    </Action>
+    <Action xsi:type="StandardAction" dwd:design-time-name="98e6d9a2-9a36-431c-8108-a9fe19460703">
+      <ID>Action</ID>
+      <Name>Map</Name>
+      <TargetType>LevelMembers</TargetType>
+      <Target>[Dim Location].[Hierarchy].[Country Name]</Target>
+      <Type>Url</Type>
+      <Expression>"https://www.google.com/search?q=google+maps+"+[Dim Location].[Country Name].CurrentMember.Name+"&amp;oq=google+maps+poland&amp;aqs=chrome..69i57j0i512j0i22i30i457j0i22i30l3j69i60l2.3536j0j4&amp;sourceid=chrome&amp;ie=UTF-8"</Expression>
+    </Action>
+  </Actions>
+</Cube>

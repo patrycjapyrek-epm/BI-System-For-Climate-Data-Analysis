@@ -1,0 +1,152 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>ClimateAndEmissionsCubes</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>ZueGvgBEJLelrPqeqM1qqqzMYME=12/24/2022 7:23:57 PM5/26/2022 11:14:25 AM</TimeStamp>
+        <ID>
+          <String>EmissionsAndClimateDW_DataSource</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>jROk0+0fhuzZkJ3h9gi+bCPSD5c=7/31/2022 7:01:05 PM5/26/2022 11:14:43 AM</TimeStamp>
+        <ID>
+          <String>Emissions And Climate DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>0QtILDdrH9saAUVQRYF/TV08RK0=6/26/2022 6:39:17 PM5/26/2022 11:15:15 AM</TimeStamp>
+        <ID>
+          <String>Dim Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>XzYTHN67L+hDP2YeFrgpB+8oTT4=12/24/2022 7:36:44 PM5/26/2022 11:16:45 AM</TimeStamp>
+        <ID>
+          <String>Dim Location</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>TcGPS8Aq/FxIF6fPr8eM9xJXW6w=5/26/2022 11:19:16 AM5/26/2022 11:17:50 AM</TimeStamp>
+        <ID>
+          <String>Dim Pollutant</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>WHLmSyhsZPihh4uy+WXEAJRxdRc=5/26/2022 11:20:00 AM5/26/2022 11:19:16 AM</TimeStamp>
+        <ID>
+          <String>Dim Sector</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>XZv20mcemNNhxbAseGprau65sRc=5/31/2022 3:50:44 PM5/31/2022 3:49:56 PM</TimeStamp>
+        <ID>
+          <String>Dim Source</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>vOtKIeIili39sgwgucfujOuet8c=8/25/2022 5:22:50 PM5/26/2022 11:20:00 AMC0lY5Loo9Sf913J/DofDf71Rius=5/26/2022 11:20:00 AM5/26/2022 11:20:00 AM</TimeStamp>
+        <ID>
+          <String>Emissions_Cube</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>wSoa4XrJL1cGhq4v7nhWEkWmCeU=6/20/2022 5:18:08 PM5/31/2022 3:50:44 PMG/pE4+O/RYzLhDIg5lQnd4T6Or8=5/31/2022 3:50:44 PM5/31/2022 3:50:44 PM</TimeStamp>
+        <ID>
+          <String>EnergyInfo_Cube</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>nUyGs2Le0Js5wAAkZ9taZe6+5UA=6/20/2022 5:18:08 PM6/4/2022 8:18:21 PM495EVwXoh2N01zyXA0IHIOFB/Bw=6/4/2022 8:18:21 PM6/4/2022 8:18:21 PM</TimeStamp>
+        <ID>
+          <String>CountryInfo_Cube</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>Y1zJ8xymtzEAABBHtrnYFo0Mng0=8/3/2022 6:12:34 PM6/5/2022 4:47:27 PMainco+bLS3IzzjkG26kxjREXLOU=6/5/2022 4:47:28 PM6/5/2022 4:47:28 PM</TimeStamp>
+        <ID>
+          <String>Emissions And Climate DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>45ILlf2aKkXqi41WC7dDXh+mVsQ=7/31/2022 7:14:33 PM7/31/2022 7:13:37 PMiKW+Su/pHj6jrP60gdAPFWYALRI=7/31/2022 7:13:37 PM7/31/2022 7:13:37 PM</TimeStamp>
+        <ID>
+          <String>Emissions And Climate DW 1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>Z8kt9mDiD84qmYb2t88WekEVf+M=8/6/2022 11:49:43 AM7/31/2022 7:18:04 PMCbcstDP6nGcIafXAHIlQpf4A85E=7/31/2022 7:18:04 PM7/31/2022 7:18:04 PM</TimeStamp>
+        <ID>
+          <String>ClimateInfo_Emissions_Energy_Country_Cube</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>F8qav2KxiAwct5s33xh1HtVr/K8=8/6/2022 11:49:43 AM8/6/2022 11:49:43 AMV0b3wDKCy7G5aLytNCY5srtojNE=8/6/2022 11:49:43 AM8/6/2022 11:49:43 AM</TimeStamp>
+        <ID>
+          <String>Emissions_Energy_Climate_Cube</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>G1v0bv+7Y3GM199qdcTj6kGRuSk=6/20/2022 5:03:24 PM6/20/2022 4:59:07 PM</TimeStamp>
+        <ID>
+          <String>Test_Emissions</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>JqTEGyAAwubTD+V/INQMmVU30zY=6/20/2022 5:22:59 PM6/20/2022 5:17:29 PM</TimeStamp>
+        <ID>
+          <String>Dim Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>y+asCSpWB1+n/tTUL+DF81ujMx8=6/20/2022 5:30:43 PM6/20/2022 5:29:53 PM</TimeStamp>
+        <ID>
+          <String>Regression</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>rFnTyspSUJADRyOTFtIkRSwldzA=5/26/2022 11:11:41 AM5/26/2022 11:11:41 AM</TimeStamp>
+      <ID>
+        <String>ClimateAndEmissionsCubes</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2022-12-24T19:36:48.94Z</LastDeployed>
+</DeploymentSnapshot>

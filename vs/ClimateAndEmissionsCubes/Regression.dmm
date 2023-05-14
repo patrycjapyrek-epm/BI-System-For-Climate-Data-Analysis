@@ -1,0 +1,210 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="157ca285-81c3-4fb6-97c9-34145fc29294" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Regression</ID>
+  <Name>Regression</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>MDXFilterComponent</Name>
+      <Value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/SQLServer/reporting/QuerySpecification"&gt;&lt;FilterItems xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition" /&gt;&lt;/Filter&gt;</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="CubeDimensionBinding" dwd:design-time-name="5ae1284d-108d-4a16-906d-20b4f40a8d2a">
+    <DataSourceID>.</DataSourceID>
+    <CubeID>Emissions And Climate DW</CubeID>
+    <CubeDimensionID>Dim Location</CubeDimensionID>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="941de8cd-bc01-44eb-bae0-7779974ec610">
+      <ID>Country Code</ID>
+      <Name>Country Code</Name>
+      <IsKey>true</IsKey>
+      <Type>Text</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="133e3ecc-bb23-4c09-adb8-3888972aa5fe">
+        <CubeID>Emissions And Climate DW</CubeID>
+        <CubeDimensionID>Dim Location</CubeDimensionID>
+        <AttributeID>Country Code</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Key</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="5901ae08-3e5f-4183-ad9f-913debc27460">
+      <ID>Emitted Amount</ID>
+      <Name>Emitted Amount</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="1e6a935b-2090-43de-94ea-c73731f4ec14">
+        <MeasureID>Emitted Amount</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="aeb1b9f2-cb2d-4982-b22f-c537b94d0be7">
+      <ID>GDP</ID>
+      <Name>GDP</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="1494597f-110c-4a47-8beb-1c5ba50cf2cd">
+        <MeasureID>GDP</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="f7cba807-0770-4244-a2c9-60413ee4b2b3">
+      <ID>Inflation</ID>
+      <Name>Inflation</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="268e5679-41cf-4c4a-99c2-583c7b5fb85e">
+        <MeasureID>Inflation</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="e412efb2-08d9-4639-b4d4-486fb27608b0">
+      <ID>Life Expectancy</ID>
+      <Name>Life Expectancy</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="63c5e73b-f512-46b9-ae0e-45a073c49fc8">
+        <MeasureID>Life Expectancy</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="e33aec5e-2ef1-4575-bdc0-615ec29dccc0">
+      <ID>Life Satisfaction</ID>
+      <Name>Life Satisfaction</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="24d6b065-404b-4937-9b20-230d9069306a">
+        <MeasureID>Life Satisfaction</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="06ddd7bb-4ad1-416c-a3c9-b9ed880e11fc">
+      <ID>Population</ID>
+      <Name>Population</Name>
+      <Type>Long</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="f4e426c8-4952-4701-917f-99bdd2122cc7">
+        <MeasureID>Population</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="b9cb0494-73e5-486b-808e-62b25367c8fb">
+      <ID>Unemployed People</ID>
+      <Name>Unemployed People</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="522fd799-23dc-4395-bc18-8172ab57bbaa">
+        <MeasureID>Unemployed People</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="bc8e3814-a582-4861-8f76-2af651760b90">
+      <ID>CountryAndEmissions</ID>
+      <Name>CountryAndEmissions</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Linear_Regression</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="d20138a9-5fd8-4440-9a0e-d4c719c158d0">
+          <ID>Country Code</ID>
+          <Name>Country Code</Name>
+          <SourceColumnID>Country Code</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="03b402f9-a46c-4ae2-b2b0-80d32aa3b3cb">
+          <ID>Emitted Amount</ID>
+          <Name>Emitted Amount</Name>
+          <SourceColumnID>Emitted Amount</SourceColumnID>
+          <Usage>Predict</Usage>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="6cef8206-9feb-4127-a949-e29c985c8060">
+          <ID>GDP</ID>
+          <Name>GDP</Name>
+          <SourceColumnID>GDP</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="a6d47a58-99f1-4068-a929-71f1c82859a8">
+          <ID>Inflation</ID>
+          <Name>Inflation</Name>
+          <SourceColumnID>Inflation</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="5041ab51-462f-4013-a9ed-902a2280d6f1">
+          <ID>Life Expectancy</ID>
+          <Name>Life Expectancy</Name>
+          <SourceColumnID>Life Expectancy</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="c1ccc147-6cdd-424c-8403-5ddb87c79949">
+          <ID>Life Satisfaction</ID>
+          <Name>Life Satisfaction</Name>
+          <SourceColumnID>Life Satisfaction</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="11af5e83-8845-4a1b-89c4-119da8aa91ed">
+          <ID>Population</ID>
+          <Name>Population</Name>
+          <SourceColumnID>Population</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="2797875c-b72f-4369-b5f7-c2799eac4bde">
+          <ID>Unemployed People</ID>
+          <Name>Unemployed People</Name>
+          <SourceColumnID>Unemployed People</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+      </Columns>
+      <AllowDrillThrough>true</AllowDrillThrough>
+    </MiningModel>
+  </MiningModels>
+  <ddl100_100:HoldoutMaxPercent>20</ddl100_100:HoldoutMaxPercent>
+</MiningStructure>
